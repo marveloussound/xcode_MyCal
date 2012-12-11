@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MyCal' target in the 'MyCal' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif
