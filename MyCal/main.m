@@ -14,9 +14,23 @@ int main(int argc, const char * argv[])
 {
 
   @autoreleasepool {
-    MyCal *myCal = [MyCal new];
+
+    MyCal *myCal =[MyCal new];
+    NSString *str = [myCal calStr];
+    
+    NSLog(@"year:%d month:%d",myCal.year,myCal.month);
+    NSLog(@"%@",str);
     
     
+    
+    //2008/02
+    myCal.year  =2008;
+    myCal.month =2;
+    str =myCal.calStr;
+    
+    
+    NSLog(@"year:%d month:%d",myCal.year,myCal.month);
+    NSLog(@"%@",str);
     
     // insert code here...
     NSLog(@"Hello, World!");

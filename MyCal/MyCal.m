@@ -41,7 +41,7 @@
   [calStr appendString:@"\n Su Mo Tu We Th Fr Sa\n"];
   
   for (int i=1;i<[self firstDay]; i++) {
-    [calStr appendString:@"  "];
+    [calStr appendString:@"   "];
     column++;
   }
   
