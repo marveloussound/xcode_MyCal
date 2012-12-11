@@ -56,9 +56,16 @@
     }else{
       day=[NSString stringWithFormat:@" %d",i];
     }
+    
     [calStr appendString:day];
+    
+    if(column ==7) {
+      [calStr appendString:@"\n"];
+      column =0;
+    }
+    column++;
   }
-  
+  return calStr;
 }
 
 
@@ -81,6 +88,18 @@
 }
 
 - (int) daysOfMonth:(int)m inYear:(int)y{
+  
+  NSDateComponents *theDay= [NSDateComponents new];
+  
+  [theDay setYear:year];
+  [theDay setMonth:month+1];
+  [theDay setDay:0];
+  
+  NSDate *date = [cal dateFromComponents:theDay];
+  
+  return ([[cal components:NSDayCalendarUnit fromDate:date] day]);
+  
+  
   
   
   
