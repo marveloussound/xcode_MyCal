@@ -11,6 +11,7 @@
 		0381004016773E0600D5C1EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381003F16773E0600D5C1EA /* main.m */; };
 		0381004416773E0600D5C1EA /* MyCal.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0381004316773E0600D5C1EA /* MyCal.1 */; };
 		0381004C16773EA000D5C1EA /* MyCal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381004B16773EA000D5C1EA /* MyCal.m */; };
+		03EE3D631678855F00B01040 /* UsefulCal.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EE3D621678855F00B01040 /* UsefulCal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		0381004316773E0600D5C1EA /* MyCal.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MyCal.1; sourceTree = "<group>"; };
 		0381004A16773EA000D5C1EA /* MyCal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCal.h; sourceTree = "<group>"; };
 		0381004B16773EA000D5C1EA /* MyCal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCal.m; sourceTree = "<group>"; };
+		03EE3D611678855F00B01040 /* UsefulCal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UsefulCal.h; path = ../UsefulCal.h; sourceTree = "<group>"; };
+		03EE3D621678855F00B01040 /* UsefulCal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UsefulCal.m; path = ../UsefulCal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 		0381003E16773E0600D5C1EA /* MyCal */ = {
 			isa = PBXGroup;
 			children = (
+				03EE3D611678855F00B01040 /* UsefulCal.h */,
+				03EE3D621678855F00B01040 /* UsefulCal.m */,
 				0381003F16773E0600D5C1EA /* main.m */,
 				0381004A16773EA000D5C1EA /* MyCal.h */,
 				0381004B16773EA000D5C1EA /* MyCal.m */,
@@ -146,6 +151,7 @@
 			files = (
 				0381004016773E0600D5C1EA /* main.m in Sources */,
 				0381004C16773EA000D5C1EA /* MyCal.m in Sources */,
+				03EE3D631678855F00B01040 /* UsefulCal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +248,7 @@
 				0381004916773E0600D5C1EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

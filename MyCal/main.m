@@ -7,23 +7,39 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MyCal.h"
+#import "UsefulCal.h"
 
 
 int main(int argc, const char * argv[])
 {
 
   @autoreleasepool {
-
-    MyCal *myCal =[MyCal new];
+    
+    UsefulCal *myCal =[UsefulCal new];
     NSString *str = [myCal calStr];
     
     NSLog(@"year:%d month:%d",myCal.year,myCal.month);
     NSLog(@"%@",str);
     
+      //月をもどす
+    myCal.prevMonth;
+    str = [myCal calStr];
+    
+    NSLog(@"year:%d month:%d",myCal.year,myCal.month);
+    NSLog(@"%@",str);
+    
+      //月をすすめる
+    myCal.nextMonth;
+    myCal.nextMonth;
+    
+    str = [myCal calStr];
+    
+    NSLog(@"year:%d month:%d",myCal.year,myCal.month);
+    NSLog(@"%@",str);
     
     
     //2008/02
+    /*
     myCal.year  =2008;
     myCal.month =2;
     str =myCal.calStr;
@@ -31,9 +47,9 @@ int main(int argc, const char * argv[])
     
     NSLog(@"year:%d month:%d",myCal.year,myCal.month);
     NSLog(@"%@",str);
-    
+    */
     // insert code here...
-    NSLog(@"Hello, World!");
+    //NSLog(@"Hello, World!");
       
   }
     return 0;

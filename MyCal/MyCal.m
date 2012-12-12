@@ -38,8 +38,12 @@
   
   int column = 1;
   NSMutableString *calStr = [NSMutableString stringWithCapacity:40];
+  
+    //ヘッダ
   [calStr appendString:@"\n Su Mo Tu We Th Fr Sa\n"];
   
+  int fd = self.firstDay;
+    //指定した月の最初の日から表示
   for (int i=1;i<[self firstDay]; i++) {
     [calStr appendString:@"   "];
     column++;
@@ -47,6 +51,8 @@
   
   
   NSString *day;
+  
+  int dom = [self daysOfMonth:month inYear:year];
   
   for(int i=1;i<=[self daysOfMonth:month inYear:year];i++){
     
@@ -98,11 +104,6 @@
   NSDate *date = [cal dateFromComponents:theDay];
   
   return ([[cal components:NSDayCalendarUnit fromDate:date] day]);
-  
-  
-  
-  
-  
   
   
 }
